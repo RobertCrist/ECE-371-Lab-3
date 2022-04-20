@@ -1,3 +1,5 @@
+`timescale 1 ps / 1 ps
+
 module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
 		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
 
@@ -22,10 +24,37 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	// Your code goes here 
 	/////////////////////////////////
 	
-	assign writedata_left = readdata_left;
-	assign writedata_right = readdata_right;
-	assign read = write;
+	
+	/*
+	*********************************
+	PART 1
+	*********************************
+	*/
+	
+//	assign writedata_left = readdata_left;
+//	assign writedata_right = readdata_right;
+//	assign read = write;
+//	assign write = read_ready & write_ready;
+
+	/*
+	*********************************
+	PART 2
+	*********************************
+	*/
+	wire [15:0] counterOut;
+	
+	wire [23:0] tone;
+	
+	counter #(.WIDTH(16), .TOP(480000)) UPCOUNTER(.incr(write), .reset(reset), .clk(CLOCK_50), .out(counterOut));  
+	
+	toneMem TONEMEMORY(.address(counterOut), .clock(CLOCK_50), .data(), .wren(1'b0), .q(tone));
+	
+	
+	assign writedata_left = tone;
+	assign writedata_right = tone;
+	//assign read = write;
 	assign write = read_ready & write_ready;
+	
 	
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
