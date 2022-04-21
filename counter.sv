@@ -1,15 +1,13 @@
 `timescale 1 ps / 1 ps
 
-module counter #(parameter WIDTH = 4, TOP = 2**WIDTH)(incr, reset, clk, out);
+module counter #(parameter WIDTH = 4)(incr, reset, clk, out);
 	input logic incr, reset, clk;
 	output logic [WIDTH - 1: 0] out;
 	
 	always_ff @(posedge clk) begin
-		if(reset)
+		if(reset | out == 48000)
 			out <= 0;
-		else if(out == (TOP))
-			out <= 0;
-		else if(incr && (out != TOP))
+		else if(incr)
 			out <= out + 1;
 		else
 			out <= out;

@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW[9]",
+					"strict" : false
+				},
+				{
 					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},
@@ -33,6 +37,10 @@
 				},
 				{
 					"name" : "AUD_ADCLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "AUD_ADCDAT",
 					"strict" : false
 				}
 			]

@@ -4,7 +4,7 @@
 // MODULE: altsyncram 
 
 // ============================================================
-// File Name: toneMem.v
+// File Name: tonemem.v
 // Megafunction Name(s):
 // 			altsyncram
 //
@@ -37,14 +37,14 @@
 // synopsys translate_off
 `timescale 1 ps / 1 ps
 // synopsys translate_on
-module toneMem (
+module tonemem (
 	address,
 	clock,
 	data,
 	wren,
 	q);
 
-	input	[18:0]  address;
+	input	[15:0]  address;
 	input	  clock;
 	input	[23:0]  data;
 	input	  wren;
@@ -87,18 +87,18 @@ module toneMem (
 	defparam
 		altsyncram_component.clock_enable_input_a = "BYPASS",
 		altsyncram_component.clock_enable_output_a = "BYPASS",
-		altsyncram_component.init_file = "tone300.mif",
+		altsyncram_component.init_file = "tone300_1s.mif",
 		altsyncram_component.intended_device_family = "Cyclone V",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",
-		altsyncram_component.numwords_a = 480000,
+		altsyncram_component.numwords_a = 48000,
 		altsyncram_component.operation_mode = "SINGLE_PORT",
 		altsyncram_component.outdata_aclr_a = "NONE",
 		altsyncram_component.outdata_reg_a = "CLOCK0",
 		altsyncram_component.power_up_uninitialized = "FALSE",
 		altsyncram_component.ram_block_type = "M10K",
 		altsyncram_component.read_during_write_mode_port_a = "NEW_DATA_NO_NBE_READ",
-		altsyncram_component.widthad_a = 19,
+		altsyncram_component.widthad_a = 16,
 		altsyncram_component.width_a = 24,
 		altsyncram_component.width_byteena_a = 1;
 
@@ -127,8 +127,8 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 // Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MIFfilename STRING "tone300.mif"
-// Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "480000"
+// Retrieval info: PRIVATE: MIFfilename STRING "tone300_1s.mif"
+// Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "48000"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "2"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
 // Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -138,40 +138,40 @@ endmodule
 // Retrieval info: PRIVATE: SingleClock NUMERIC "1"
 // Retrieval info: PRIVATE: UseDQRAM NUMERIC "1"
 // Retrieval info: PRIVATE: WRCONTROL_ACLR_A NUMERIC "0"
-// Retrieval info: PRIVATE: WidthAddr NUMERIC "19"
+// Retrieval info: PRIVATE: WidthAddr NUMERIC "16"
 // Retrieval info: PRIVATE: WidthData NUMERIC "24"
 // Retrieval info: PRIVATE: rden NUMERIC "0"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
-// Retrieval info: CONSTANT: INIT_FILE STRING "tone300.mif"
+// Retrieval info: CONSTANT: INIT_FILE STRING "tone300_1s.mif"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone V"
 // Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
-// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "480000"
+// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "48000"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "SINGLE_PORT"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
 // Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 // Retrieval info: CONSTANT: RAM_BLOCK_TYPE STRING "M10K"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "NEW_DATA_NO_NBE_READ"
-// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "19"
+// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "16"
 // Retrieval info: CONSTANT: WIDTH_A NUMERIC "24"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
-// Retrieval info: USED_PORT: address 0 0 19 0 INPUT NODEFVAL "address[18..0]"
+// Retrieval info: USED_PORT: address 0 0 16 0 INPUT NODEFVAL "address[15..0]"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 // Retrieval info: USED_PORT: data 0 0 24 0 INPUT NODEFVAL "data[23..0]"
 // Retrieval info: USED_PORT: q 0 0 24 0 OUTPUT NODEFVAL "q[23..0]"
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
-// Retrieval info: CONNECT: @address_a 0 0 19 0 address 0 0 19 0
+// Retrieval info: CONNECT: @address_a 0 0 16 0 address 0 0 16 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 24 0 data 0 0 24 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 24 0 @q_a 0 0 24 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL toneMem_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL tonemem_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf
