@@ -42,21 +42,31 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	PART 2
 	*********************************
 	*/
-	wire [15:0] counterOut;
+//	
+//	wire [15:0] counterOut;
+//	
+//	wire [23:0] tone;
+//	
+//	counter #(.WIDTH(16)) UPCOUNTER(.incr(write), .reset(reset), .clk(CLOCK_50), .out(counterOut));  
+//	
+//	tonemem TONEMEMORY(.address(counterOut), .clock(CLOCK_50), .data(), .wren(1'b0), .q(tone));
+//	
+//	
+//	assign writedata_left = SW[9] ? tone:readdata_left;
+//	assign writedata_right = SW[9] ? tone:readdata_right;
+//	assign read = write;
+//	assign write = read_ready & write_ready;
 	
-	wire [23:0] tone;
+	/*
+	*********************************
+	PART 3
+	*********************************
+	*/
 	
-	counter #(.WIDTH(16)) UPCOUNTER(.incr(write), .reset(reset), .clk(CLOCK_50), .out(counterOut));  
-	
-	tonemem TONEMEMORY(.address(counterOut), .clock(CLOCK_50), .data(), .wren(1'b0), .q(tone));
-	
-	
-	assign writedata_left = SW[9] ? tone:readdata_left;
-	assign writedata_right = SW[9] ? tone:readdata_right;
+	FIR_Filter #(.N(2)) leftFilter(.dataIn(readdata_left), .en(read_ready & write_ready), .reset(reset), .clk(CLOCK_50), .dataOut(writedata_left));
+	FIR_Filter #(.N(2)) rightFilter(.dataIn(readdata_right), .en(read_ready & write_ready), .reset(reset), .clk(CLOCK_50), .dataOut(writedata_right));
 	assign read = write;
 	assign write = read_ready & write_ready;
-	
-	
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
 //

@@ -2,25 +2,125 @@
 do runCounter.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:31:50 on Apr 21,2022
+# Start time: 21:30:41 on Apr 24,2022
 # vlog -reportprogress 300 ./counter.sv 
 # -- Compiling module counter
 # -- Compiling module counter_testbench
 # 
 # Top level modules:
 # 	counter_testbench
-# End time: 14:31:50 on Apr 21,2022, Elapsed time: 0:00:00
+# End time: 21:30:41 on Apr 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
-# Start time: 14:31:50 on Apr 21,2022
+# Start time: 21:30:42 on Apr 24,2022
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Error (suppressible): (vsim-3584) ./counter.sv(33): Module parameter 'TOP' not found for override.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench File: ./counter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runCounter.do PAUSED at line 15
+do runCounter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:31:03 on Apr 24,2022
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 21:31:03 on Apr 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 21:30:42 on Apr 24,2022
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Error (suppressible): (vsim-3584) ./counter.sv(33): Module parameter 'TOP' not found for override.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench File: ./counter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runCounter.do PAUSED at line 15
+do runCounter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:31:10 on Apr 24,2022
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 21:31:10 on Apr 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 21:30:42 on Apr 24,2022
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3017) ./counter.sv(33): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench/dut File: ./counter.sv
+# ** Warning: (vsim-3722) ./counter.sv(33): [TFMPC] - Missing connection for port 'divInFifoSum'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./counter.sv(60)
+#    Time: 1050 ps  Iteration: 1  Instance: /counter_testbench
+# Break in Module counter_testbench at ./counter.sv line 60
+do runCounter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:31:33 on Apr 24,2022
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 21:31:34 on Apr 24,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:31:39 on Apr 24,2022, Elapsed time: 0:00:57
+# Errors: 2, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 21:31:39 on Apr 24,2022
 # Loading sv_std.std
 # Loading work.counter_testbench
 # Loading work.counter
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./counter.sv(45)
-#    Time: 6750 ps  Iteration: 1  Instance: /counter_testbench
-# Break in Module counter_testbench at ./counter.sv line 45
-# End time: 15:15:04 on Apr 21,2022, Elapsed time: 0:43:14
+# ** Note: $stop    : ./counter.sv(60)
+#    Time: 1050 ps  Iteration: 1  Instance: /counter_testbench
+# Break in Module counter_testbench at ./counter.sv line 60
+add wave -position end  sim:/counter_testbench/divInFifoSum
+add wave -position end  sim:/counter_testbench/dut/accumulator
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter_wave.do}
+do runCounter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:17 on Apr 24,2022
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 21:32:17 on Apr 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 21:32:18 on Apr 24,2022, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 21:32:18 on Apr 24,2022
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./counter.sv(60)
+#    Time: 1050 ps  Iteration: 1  Instance: /counter_testbench
+# Break in Module counter_testbench at ./counter.sv line 60

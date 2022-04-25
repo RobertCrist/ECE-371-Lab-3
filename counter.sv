@@ -3,7 +3,7 @@
 module counter #(parameter WIDTH = 4)(incr, reset, clk, out);
 	input logic incr, reset, clk;
 	output logic [WIDTH - 1: 0] out;
-	
+
 	always_ff @(posedge clk) begin
 		if(reset | out == 48000)
 			out <= 0;
@@ -12,15 +12,15 @@ module counter #(parameter WIDTH = 4)(incr, reset, clk, out);
 		else
 			out <= out;
 	end
+		
 endmodule
 
 module counter_testbench();
 	logic reset, clk;
 	logic incr;
-	
 	logic[3:0] out;
 	
-	counter #(.WIDTH(4), .TOP(7)) dut(.incr, .reset, .clk, .out);
+	counter #(.WIDTH(4)) dut(.incr, .reset, .clk, .out);
 	
 	//Setting up the clock
 	parameter CLOCK_PERIOD=100;
@@ -32,7 +32,7 @@ module counter_testbench();
 	integer i;
 	initial begin
 		reset <= 1;	@(posedge clk);
-		reset <= 0; incr <= 0; @(posedge clk);
+		reset <= 0; incr <= 0;	@(posedge clk);
 		repeat(2) 	@(posedge clk);
 		
 		for(int i = 0; i < 32; i++)begin
@@ -40,6 +40,7 @@ module counter_testbench();
 			incr <= 1; 	@(posedge clk);
 			incr <= 0; 	@(posedge clk);
 		end
+
 		$stop;
 	end //initial
 	

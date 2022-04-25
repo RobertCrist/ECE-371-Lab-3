@@ -24,10 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[9]",
-					"strict" : false
-				},
-				{
 					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},

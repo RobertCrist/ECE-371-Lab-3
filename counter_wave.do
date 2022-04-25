@@ -4,6 +4,8 @@ add wave -noupdate /counter_testbench/clk
 add wave -noupdate /counter_testbench/reset
 add wave -noupdate /counter_testbench/incr
 add wave -noupdate -radix unsigned /counter_testbench/out
+add wave -noupdate -radix unsigned /counter_testbench/divInFifoSum
+add wave -noupdate -radix unsigned /counter_testbench/dut/accumulator
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
@@ -21,4 +23,4 @@ configure wave -griddelta 2
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {5800 ps} {6800 ps}
+WaveRestoreZoom {100 ps} {1100 ps}
