@@ -1,109 +1,45 @@
 # Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do runfIR.do
+do runFiR.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:55:25 on Apr 25,2022
+# Start time: 20:34:42 on Apr 25,2022
 # vlog -reportprogress 300 ./FIR_Filter.sv 
 # -- Compiling module FIR_Filter
 # -- Compiling module FIR_Filter_testbench
 # 
 # Top level modules:
 # 	FIR_Filter_testbench
-# End time: 11:55:25 on Apr 25,2022, Elapsed time: 0:00:00
+# End time: 20:34:43 on Apr 25,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:55:25 on Apr 25,2022
+# Start time: 20:34:43 on Apr 25,2022
 # vlog -reportprogress 300 ./fifo.sv 
 # -- Compiling module fifo
 # 
 # Top level modules:
 # 	fifo
-# End time: 11:55:25 on Apr 25,2022, Elapsed time: 0:00:00
+# End time: 20:34:43 on Apr 25,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:55:25 on Apr 25,2022
+# Start time: 20:34:43 on Apr 25,2022
 # vlog -reportprogress 300 ./fifo_ctrl.sv 
 # -- Compiling module fifo_ctrl
 # 
 # Top level modules:
 # 	fifo_ctrl
-# End time: 11:55:26 on Apr 25,2022, Elapsed time: 0:00:01
+# End time: 20:34:43 on Apr 25,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:55:26 on Apr 25,2022
+# Start time: 20:34:43 on Apr 25,2022
 # vlog -reportprogress 300 ./reg_file.sv 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 11:55:26 on Apr 25,2022, Elapsed time: 0:00:00
+# End time: 20:34:43 on Apr 25,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 11:55:26 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# ** Error: Cannot open macro file: FIR_wave.do
-# Error in macro ./runfIR.do line 23
-# Cannot open macro file: FIR_wave.do
-#     while executing
-# "do FIR_wave.do"
-add wave -position end  sim:/FIR_Filter_testbench/clk
-add wave -position end  sim:/FIR_Filter_testbench/reset
-add wave -position end  sim:/FIR_Filter_testbench/dataIn
-add wave -position 2  sim:/FIR_Filter_testbench/en
-add wave -position end  sim:/FIR_Filter_testbench/dataOut
-add wave -position end  sim:/FIR_Filter_testbench/dut/divIn
-add wave -position end  sim:/FIR_Filter_testbench/dut/fifoOut
-add wave -position end  sim:/FIR_Filter_testbench/dut/negFifoOut
-add wave -position end  sim:/FIR_Filter_testbench/dut/divInFifoSum
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_wave.do}
-do runfIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:10 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 11:57:10 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:10 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 11:57:10 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:10 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 11:57:10 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:10 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 11:57:10 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:57:11 on Apr 25,2022, Elapsed time: 0:01:45
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 11:57:11 on Apr 25,2022
+# Start time: 20:34:44 on Apr 25,2022
 # Loading sv_std.std
 # Loading work.FIR_Filter_testbench
 # Loading work.FIR_Filter
@@ -116,356 +52,5 @@ do runfIR.do
 # ** Note: $stop    : ./FIR_Filter.sv(57)
 #    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
 # Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-do runfIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:23 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 11:58:24 on Apr 25,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:24 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 11:58:24 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:24 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 11:58:24 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:24 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 11:58:24 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:58:25 on Apr 25,2022, Elapsed time: 0:01:14
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 11:58:25 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-do runfIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:59 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 11:58:59 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:59 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 11:58:59 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:59 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 11:58:59 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:59 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 11:58:59 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:59:00 on Apr 25,2022, Elapsed time: 0:00:35
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 11:59:00 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-do runfIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:10 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# ** Error: ./FIR_Filter.sv(12): (vlog-2730) Undefined variable: 'data'.
-# -- Compiling module FIR_Filter_testbench
-# End time: 12:01:10 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runfIR.do line 7
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./FIR_Filter.sv""
-do runfIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:27 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 12:01:27 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:27 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 12:01:27 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:27 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 12:01:27 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:27 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 12:01:27 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 12:01:28 on Apr 25,2022, Elapsed time: 0:02:28
-# Errors: 4, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 12:01:28 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-do runFIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:04 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 12:09:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:04 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 12:09:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:04 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 12:09:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:04 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 12:09:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 12:09:05 on Apr 25,2022, Elapsed time: 0:07:37
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 12:09:05 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-do runFIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:39 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 12:11:39 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:39 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 12:11:39 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:39 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 12:11:39 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:39 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 12:11:39 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 12:11:40 on Apr 25,2022, Elapsed time: 0:02:35
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 12:11:40 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-add wave -position end  sim:/FIR_Filter_testbench/dut/BUFFER/w_data
-add wave -position end  sim:/FIR_Filter_testbench/dut/BUFFER/r_data
-add wave -position end  sim:/FIR_Filter_testbench/dut/BUFFER/w_addr
-add wave -position end  sim:/FIR_Filter_testbench/dut/BUFFER/r_addr
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_wave.do}
-do runFIR.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:03 on Apr 25,2022
-# vlog -reportprogress 300 ./FIR_Filter.sv 
-# -- Compiling module FIR_Filter
-# -- Compiling module FIR_Filter_testbench
-# 
-# Top level modules:
-# 	FIR_Filter_testbench
-# End time: 17:23:04 on Apr 25,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:04 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 17:23:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:04 on Apr 25,2022
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 17:23:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:04 on Apr 25,2022
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 17:23:04 on Apr 25,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:23:06 on Apr 25,2022, Elapsed time: 5:11:26
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_Filter_testbench 
-# Start time: 17:23:06 on Apr 25,2022
-# Loading sv_std.std
-# Loading work.FIR_Filter_testbench
-# Loading work.FIR_Filter
-# Loading work.fifo
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./FIR_Filter.sv(57)
-#    Time: 3250 ps  Iteration: 1  Instance: /FIR_Filter_testbench
-# Break in Module FIR_Filter_testbench at ./FIR_Filter.sv line 57
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_wave.do}
-# End time: 18:27:51 on Apr 25,2022, Elapsed time: 1:04:45
+# End time: 23:23:11 on Apr 25,2022, Elapsed time: 2:48:27
 # Errors: 0, Warnings: 0

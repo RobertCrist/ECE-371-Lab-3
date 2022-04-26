@@ -71,14 +71,14 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	
 	wire SW9C1, SW9C2, SW8C1, SW8C2, KEY0C1, KEY0C2;
 	
-	always_ff @(posedge clk) begin
+	always_ff @(posedge CLOCK_50) begin
 		SW9C1 <= SW[9];
 		SW9C2 <= SW9C1;
 		
 		SW8C1 <= SW[8];
 		SW8C2 <= SW8C1;
 		
-		KEY0C1 <= ~KEY[9];
+		KEY0C1 <= ~KEY[0];
 		KEY0C2 <= KEY0C1;
 	end
 	

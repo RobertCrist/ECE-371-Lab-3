@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part1
-Mon Apr 25 12:56:53 2022
+Mon Apr 25 23:08:44 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -26,8 +26,8 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  18. Source assignments for audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
  19. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
  20. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
- 21. Source assignments for FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated
- 22. Source assignments for FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated
+ 21. Source assignments for FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated
+ 22. Source assignments for FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated
  23. Parameter Settings for User Entity Instance: counter:UPCOUNTER
  24. Parameter Settings for User Entity Instance: tonemem:TONEMEMORY|altsyncram:altsyncram_component
  25. Parameter Settings for User Entity Instance: FIR_Filter:leftFilter
@@ -95,16 +95,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 25 12:56:53 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr 25 23:08:44 2022       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; part1                                       ;
 ; Top-level Entity Name           ; part1                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 431                                         ;
+; Total registers                 ; 442                                         ;
 ; Total pins                      ; 21                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,164,672                                   ;
+; Total block memory bits         ; 1,165,056                                   ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -229,10 +229,10 @@ agreement for further details.
 ; fifo_ctrl.sv                       ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo_ctrl.sv                       ;         ;
 ; fifo.sv                            ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv                            ;         ;
 ; reg_file.sv                        ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/reg_file.sv                        ;         ;
-; part1.v                            ; yes             ; User Verilog HDL File                  ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v                            ;         ;
 ; counter.sv                         ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv                         ;         ;
 ; tonemem.v                          ; yes             ; User Wizard-Generated File             ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v                          ;         ;
 ; FIR_Filter.sv                      ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv                      ;         ;
+; part1.sv                           ; yes             ; User SystemVerilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv                           ;         ;
 ; altsyncram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
 ; stratix_ram_block.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
 ; lpm_mux.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
@@ -276,7 +276,7 @@ agreement for further details.
 ; db/cntr_u27.tdf                    ; yes             ; Auto-Generated Megafunction            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/cntr_u27.tdf                    ;         ;
 ; db/cntr_i2b.tdf                    ; yes             ; Auto-Generated Megafunction            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/cntr_i2b.tdf                    ;         ;
 ; altera_up_audio_out_serializer.v   ; yes             ; Auto-Found Verilog HDL File            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/altera_up_audio_out_serializer.v   ;         ;
-; db/altsyncram_agi1.tdf             ; yes             ; Auto-Generated Megafunction            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_agi1.tdf             ;         ;
+; db/altsyncram_aji1.tdf             ; yes             ; Auto-Generated Megafunction            ; E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_aji1.tdf             ;         ;
 +------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
@@ -285,20 +285,20 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 418            ;
+; Estimate of Logic utilization (ALMs needed) ; 419            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 712            ;
-;     -- 7 input functions                    ; 5              ;
-;     -- 6 input functions                    ; 109            ;
-;     -- 5 input functions                    ; 197            ;
-;     -- 4 input functions                    ; 107            ;
-;     -- <=3 input functions                  ; 294            ;
+; Combinational ALUT usage for logic          ; 709            ;
+;     -- 7 input functions                    ; 9              ;
+;     -- 6 input functions                    ; 108            ;
+;     -- 5 input functions                    ; 135            ;
+;     -- 4 input functions                    ; 151            ;
+;     -- <=3 input functions                  ; 306            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 431            ;
+; Dedicated logic registers                   ; 442            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 21             ;
 ; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 1164672        ;
+; Total block memory bits                     ; 1165056        ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
@@ -306,9 +306,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 719            ;
-; Total fan-out                               ; 8662           ;
-; Average fan-out                             ; 5.87           ;
+; Maximum fan-out                             ; 730            ;
+; Total fan-out                               ; 8696           ;
+; Average fan-out                             ; 5.86           ;
 +---------------------------------------------+----------------+
 
 
@@ -317,25 +317,25 @@ agreement for further details.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                          ; Entity Name                      ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |part1                                                        ; 712 (96)            ; 431 (0)                   ; 1164672           ; 0          ; 21   ; 0            ; |part1                                                                                                                                                                                                                       ; part1                            ; work         ;
-;    |FIR_Filter:leftFilter|                                    ; 80 (48)             ; 61 (24)                   ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter                                                                                                                                                                                                 ; FIR_Filter                       ; work         ;
-;       |fifo:BUFFER|                                           ; 32 (0)              ; 37 (0)                    ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER                                                                                                                                                                                     ; fifo                             ; work         ;
-;          |fifo_ctrl:c_unit|                                   ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit                                                                                                                                                                    ; fifo_ctrl                        ; work         ;
-;          |reg_file:r_unit|                                    ; 25 (25)             ; 31 (31)                   ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit                                                                                                                                                                     ; reg_file                         ; work         ;
-;             |altsyncram:array_reg_rtl_0|                      ; 0 (0)               ; 0 (0)                     ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0                                                                                                                                          ; altsyncram                       ; work         ;
-;                |altsyncram_agi1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated                                                                                                           ; altsyncram_agi1                  ; work         ;
-;    |FIR_Filter:rightFilter|                                   ; 73 (48)             ; 55 (24)                   ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter                                                                                                                                                                                                ; FIR_Filter                       ; work         ;
-;       |fifo:BUFFER|                                           ; 25 (0)              ; 31 (0)                    ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER                                                                                                                                                                                    ; fifo                             ; work         ;
-;          |reg_file:r_unit|                                    ; 25 (25)             ; 31 (31)                   ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit                                                                                                                                                                    ; reg_file                         ; work         ;
-;             |altsyncram:array_reg_rtl_0|                      ; 0 (0)               ; 0 (0)                     ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0                                                                                                                                         ; altsyncram                       ; work         ;
-;                |altsyncram_agi1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 192               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated                                                                                                          ; altsyncram_agi1                  ; work         ;
-;    |audio_and_video_config:cfg|                               ; 98 (2)              ; 65 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                            ; audio_and_video_config           ; work         ;
+; |part1                                                        ; 709 (98)            ; 442 (6)                   ; 1165056           ; 0          ; 21   ; 0            ; |part1                                                                                                                                                                                                                       ; part1                            ; work         ;
+;    |FIR_Filter:leftFilter|                                    ; 83 (48)             ; 64 (24)                   ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter                                                                                                                                                                                                 ; FIR_Filter                       ; work         ;
+;       |fifo:BUFFER|                                           ; 35 (0)              ; 40 (0)                    ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER                                                                                                                                                                                     ; fifo                             ; work         ;
+;          |fifo_ctrl:c_unit|                                   ; 9 (9)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit                                                                                                                                                                    ; fifo_ctrl                        ; work         ;
+;          |reg_file:r_unit|                                    ; 26 (26)             ; 33 (33)                   ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit                                                                                                                                                                     ; reg_file                         ; work         ;
+;             |altsyncram:array_reg_rtl_0|                      ; 0 (0)               ; 0 (0)                     ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0                                                                                                                                          ; altsyncram                       ; work         ;
+;                |altsyncram_aji1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated                                                                                                           ; altsyncram_aji1                  ; work         ;
+;    |FIR_Filter:rightFilter|                                   ; 74 (48)             ; 57 (24)                   ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter                                                                                                                                                                                                ; FIR_Filter                       ; work         ;
+;       |fifo:BUFFER|                                           ; 26 (0)              ; 33 (0)                    ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER                                                                                                                                                                                    ; fifo                             ; work         ;
+;          |reg_file:r_unit|                                    ; 26 (26)             ; 33 (33)                   ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit                                                                                                                                                                    ; reg_file                         ; work         ;
+;             |altsyncram:array_reg_rtl_0|                      ; 0 (0)               ; 0 (0)                     ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0                                                                                                                                         ; altsyncram                       ; work         ;
+;                |altsyncram_aji1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 384               ; 0          ; 0    ; 0            ; |part1|FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated                                                                                                          ; altsyncram_aji1                  ; work         ;
+;    |audio_and_video_config:cfg|                               ; 99 (2)              ; 65 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                            ; audio_and_video_config           ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 19 (19)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                               ; Altera_UP_I2C                    ; work         ;
-;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 62 (62)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                           ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
+;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 63 (63)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                           ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
 ;       |Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz| ; 15 (15)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz                                                                                                                                      ; Altera_UP_Slow_Clock_Generator   ; work         ;
-;    |audio_codec:codec|                                        ; 269 (10)            ; 228 (2)                   ; 12288             ; 0          ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                     ; audio_codec                      ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 108 (5)             ; 112 (40)                  ; 6144              ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                               ; Altera_UP_Audio_In_Deserializer  ; work         ;
-;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 8 (8)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                             ; Altera_UP_Audio_Bit_Counter      ; work         ;
+;    |audio_codec:codec|                                        ; 268 (10)            ; 228 (2)                   ; 12288             ; 0          ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                     ; audio_codec                      ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 109 (5)             ; 112 (40)                  ; 6144              ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                               ; Altera_UP_Audio_In_Deserializer  ; work         ;
+;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 9 (9)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                             ; Altera_UP_Audio_Bit_Counter      ; work         ;
 ;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 47 (0)              ; 33 (0)                    ; 3072              ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                                ; Altera_UP_SYNC_FIFO              ; work         ;
 ;             |scfifo:Sync_FIFO|                                ; 47 (0)              ; 33 (0)                    ; 3072              ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                               ; scfifo                           ; work         ;
 ;                |scfifo_8ba1:auto_generated|                   ; 47 (0)              ; 33 (0)                    ; 3072              ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated                                                    ; scfifo_8ba1                      ; work         ;
@@ -371,17 +371,17 @@ agreement for further details.
 ;                      |cntr_i2b:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr               ; cntr_i2b                         ; work         ;
 ;                      |cntr_u27:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter        ; cntr_u27                         ; work         ;
 ;       |Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges                                                                                                                                                     ; Altera_UP_Clock_Edge             ; work         ;
-;       |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                                ; Altera_UP_Clock_Edge             ; work         ;
-;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                     ; Altera_UP_Clock_Edge             ; work         ;
+;       |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                                ; Altera_UP_Clock_Edge             ; work         ;
+;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                     ; Altera_UP_Clock_Edge             ; work         ;
 ;    |clock_generator:my_clock_gen|                             ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|clock_generator:my_clock_gen                                                                                                                                                                                          ; clock_generator                  ; work         ;
 ;       |altpll:DE_Clock_Generator_Audio|                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio                                                                                                                                                          ; altpll                           ; work         ;
 ;          |altpll_1uu1:auto_generated|                         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated                                                                                                                               ; altpll_1uu1                      ; work         ;
 ;    |counter:UPCOUNTER|                                        ; 22 (22)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |part1|counter:UPCOUNTER                                                                                                                                                                                                     ; counter                          ; work         ;
-;    |tonemem:TONEMEMORY|                                       ; 74 (0)              ; 6 (0)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY                                                                                                                                                                                                    ; tonemem                          ; work         ;
-;       |altsyncram:altsyncram_component|                       ; 74 (0)              ; 6 (0)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component                                                                                                                                                                    ; altsyncram                       ; work         ;
-;          |altsyncram_d0q1:auto_generated|                     ; 74 (0)              ; 6 (6)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated                                                                                                                                     ; altsyncram_d0q1                  ; work         ;
+;    |tonemem:TONEMEMORY|                                       ; 65 (0)              ; 6 (0)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY                                                                                                                                                                                                    ; tonemem                          ; work         ;
+;       |altsyncram:altsyncram_component|                       ; 65 (0)              ; 6 (0)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component                                                                                                                                                                    ; altsyncram                       ; work         ;
+;          |altsyncram_d0q1:auto_generated|                     ; 65 (0)              ; 6 (6)                     ; 1152000           ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated                                                                                                                                     ; altsyncram_d0q1                  ; work         ;
 ;             |decode_41a:rden_decode|                          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|decode_41a:rden_decode                                                                                                              ; decode_41a                       ; work         ;
-;             |mux_9hb:mux2|                                    ; 69 (69)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2                                                                                                                        ; mux_9hb                          ; work         ;
+;             |mux_9hb:mux2|                                    ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2                                                                                                                        ; mux_9hb                          ; work         ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -391,8 +391,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+---------+----------------+
 ; Name                                                                                                                                                                                                                        ; Type       ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF            ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+---------+----------------+
-; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO       ; Simple Dual Port ; 8            ; 24           ; 8            ; 24           ; 192     ; None           ;
-; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated|ALTSYNCRAM                                                                                                     ; AUTO       ; Simple Dual Port ; 8            ; 24           ; 8            ; 24           ; 192     ; None           ;
+; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO       ; Simple Dual Port ; 16           ; 24           ; 16           ; 24           ; 384     ; None           ;
+; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated|ALTSYNCRAM                                                                                                     ; AUTO       ; Simple Dual Port ; 16           ; 24           ; 16           ; 24           ; 384     ; None           ;
 ; audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ALTSYNCRAM  ; AUTO       ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072    ; None           ;
 ; audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ALTSYNCRAM ; AUTO       ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072    ; None           ;
 ; audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ALTSYNCRAM   ; AUTO       ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072    ; None           ;
@@ -452,20 +452,23 @@ Encoding Type:  One-Hot
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[0]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[0] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[1]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[1] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[2]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[2] ;
+; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[3]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[3] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[0]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[0] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[1]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[1] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[2]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[2] ;
+; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[3]                                 ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[3] ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|full                                      ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|full      ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|fifo_ctrl:c_unit|empty                                     ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|empty     ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|full                                       ; Lost fanout                                                              ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|empty                                      ; Lost fanout                                                              ;
+; FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr[0]                                  ; Merged with FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[0] ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~2                   ; Lost fanout                                                              ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~3                   ; Lost fanout                                                              ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~4                   ; Lost fanout                                                              ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~2 ; Lost fanout                                                              ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~3 ; Lost fanout                                                              ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~4 ; Lost fanout                                                              ;
-; Total Number of Removed Registers = 18                                                        ;                                                                          ;
+; Total Number of Removed Registers = 21                                                        ;                                                                          ;
 +-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
@@ -474,12 +477,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 431   ;
-; Number of registers using Synchronous Clear  ; 289   ;
+; Total registers                              ; 442   ;
+; Number of registers using Synchronous Clear  ; 290   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 240   ;
+; Number of registers using Clock Enable       ; 241   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -520,6 +523,8 @@ Encoding Type:  One-Hot
 ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[28] ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0 ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[29] ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0 ;
 ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[30] ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0 ;
+; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[31] ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0 ;
+; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[32] ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0 ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[0]   ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[1]   ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[2]   ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
@@ -551,6 +556,8 @@ Encoding Type:  One-Hot
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[28]  ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[29]  ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
 ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[30]  ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
+; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[31]  ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
+; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0_bypass[32]  ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0  ;
 +-------------------------------------------------------------------------------+--------------------------------------------------------------------+
 
 
@@ -559,22 +566,22 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[2]                                       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[2]                                                                             ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[5]                                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[7]                                                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[2]                                                                                           ;
-; 3:1                ; 48 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |part1|FIR_Filter:leftFilter|accumulator[0]                                                                                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |part1|counter:UPCOUNTER|out[2]                                                                                                                 ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[3]                                          ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[0]                                                                   ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[1]                                                  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[6]                                                  ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[12]                                             ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr                                                                                ;
-; 5:1                ; 21 bits   ; 63 LEs        ; 63 LEs               ; 0 LEs                  ; No         ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2|l3_w7_n0_mux_dataout                      ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |part1|writedata_left[2]                                                                                                                        ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[1]                                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|wr_ptr[3]                                                                             ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[15]                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[2]                                                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[5]                                                                                           ;
+; 3:1                ; 48 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |part1|FIR_Filter:leftFilter|accumulator[1]                                                                                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |part1|counter:UPCOUNTER|out[11]                                                                                                                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[4]                                          ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[0] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[2]                                                                   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[7]                                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[4]                                                  ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[8]                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |part1|FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit|rd_ptr                                                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |part1|writedata_left[1]                                                                                                                        ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |part1|tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2|l3_w19_n0_mux_dataout                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -624,7 +631,7 @@ Encoding Type:  One-Hot
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated ;
+; Source assignments for FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                    ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
@@ -633,7 +640,7 @@ Encoding Type:  One-Hot
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_agi1:auto_generated ;
+; Source assignments for FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0|altsyncram_aji1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -717,7 +724,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------+
 ; Parameter Name ; Value ; Type                                      ;
 +----------------+-------+-------------------------------------------+
-; SIZE           ; 8     ; Signed Integer                            ;
+; SIZE           ; 16    ; Signed Integer                            ;
 +----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -728,7 +735,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
 ; DATA_WIDTH     ; 24    ; Signed Integer                                        ;
-; ADDR_WIDTH     ; 3     ; Signed Integer                                        ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -738,7 +745,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                   ;
 +----------------+-------+------------------------------------------------------------------------+
-; ADDR_WIDTH     ; 3     ; Signed Integer                                                         ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                                         ;
 +----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -749,7 +756,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                                  ;
 +----------------+-------+-----------------------------------------------------------------------+
 ; DATA_WIDTH     ; 24    ; Signed Integer                                                        ;
-; ADDR_WIDTH     ; 3     ; Signed Integer                                                        ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                                        ;
 +----------------+-------+-----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -759,7 +766,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; Parameter Name ; Value ; Type                                       ;
 +----------------+-------+--------------------------------------------+
-; SIZE           ; 8     ; Signed Integer                             ;
+; SIZE           ; 16    ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -770,7 +777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                   ;
 +----------------+-------+--------------------------------------------------------+
 ; DATA_WIDTH     ; 24    ; Signed Integer                                         ;
-; ADDR_WIDTH     ; 3     ; Signed Integer                                         ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                         ;
 +----------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -780,7 +787,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
-; ADDR_WIDTH     ; 3     ; Signed Integer                                                          ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                                          ;
 +----------------+-------+-------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -791,7 +798,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                                   ;
 +----------------+-------+------------------------------------------------------------------------+
 ; DATA_WIDTH     ; 24    ; Signed Integer                                                         ;
-; ADDR_WIDTH     ; 3     ; Signed Integer                                                         ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                                                         ;
 +----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1465,8 +1472,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                            ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                            ;
 ; WIDTH_A                            ; 24                   ; Untyped                                                            ;
-; WIDTHAD_A                          ; 3                    ; Untyped                                                            ;
-; NUMWORDS_A                         ; 8                    ; Untyped                                                            ;
+; WIDTHAD_A                          ; 4                    ; Untyped                                                            ;
+; NUMWORDS_A                         ; 16                   ; Untyped                                                            ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                            ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                            ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
@@ -1474,8 +1481,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                            ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
 ; WIDTH_B                            ; 24                   ; Untyped                                                            ;
-; WIDTHAD_B                          ; 3                    ; Untyped                                                            ;
-; NUMWORDS_B                         ; 8                    ; Untyped                                                            ;
+; WIDTHAD_B                          ; 4                    ; Untyped                                                            ;
+; NUMWORDS_B                         ; 16                   ; Untyped                                                            ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                            ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                            ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                            ;
@@ -1508,7 +1515,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                            ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                            ;
-; CBXI_PARAMETER                     ; altsyncram_agi1      ; Untyped                                                            ;
+; CBXI_PARAMETER                     ; altsyncram_aji1      ; Untyped                                                            ;
 +------------------------------------+----------------------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1526,8 +1533,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                           ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                           ;
 ; WIDTH_A                            ; 24                   ; Untyped                                                           ;
-; WIDTHAD_A                          ; 3                    ; Untyped                                                           ;
-; NUMWORDS_A                         ; 8                    ; Untyped                                                           ;
+; WIDTHAD_A                          ; 4                    ; Untyped                                                           ;
+; NUMWORDS_A                         ; 16                   ; Untyped                                                           ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                           ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                           ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                           ;
@@ -1535,8 +1542,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                           ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                           ;
 ; WIDTH_B                            ; 24                   ; Untyped                                                           ;
-; WIDTHAD_B                          ; 3                    ; Untyped                                                           ;
-; NUMWORDS_B                         ; 8                    ; Untyped                                                           ;
+; WIDTHAD_B                          ; 4                    ; Untyped                                                           ;
+; NUMWORDS_B                         ; 16                   ; Untyped                                                           ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                           ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                           ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                           ;
@@ -1569,7 +1576,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                           ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                           ;
-; CBXI_PARAMETER                     ; altsyncram_agi1      ; Untyped                                                           ;
+; CBXI_PARAMETER                     ; altsyncram_aji1      ; Untyped                                                           ;
 +------------------------------------+----------------------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1594,10 +1601,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                     ;
 ;     -- WIDTH_A                            ; 24                                                                            ;
-;     -- NUMWORDS_A                         ; 8                                                                             ;
+;     -- NUMWORDS_A                         ; 16                                                                            ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
 ;     -- WIDTH_B                            ; 24                                                                            ;
-;     -- NUMWORDS_B                         ; 8                                                                             ;
+;     -- NUMWORDS_B                         ; 16                                                                            ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                        ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                          ;
@@ -1605,10 +1612,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0  ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                     ;
 ;     -- WIDTH_A                            ; 24                                                                            ;
-;     -- NUMWORDS_A                         ; 8                                                                             ;
+;     -- NUMWORDS_A                         ; 16                                                                            ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
 ;     -- WIDTH_B                            ; 24                                                                            ;
-;     -- NUMWORDS_B                         ; 8                                                                             ;
+;     -- NUMWORDS_B                         ; 16                                                                            ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                        ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                          ;
@@ -1723,27 +1730,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 431                         ;
+; arriav_ff             ; 442                         ;
 ;     ENA               ; 14                          ;
-;     ENA SCLR          ; 226                         ;
+;     ENA SCLR          ; 227                         ;
 ;     SCLR              ; 63                          ;
-;     plain             ; 128                         ;
+;     plain             ; 138                         ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 712                         ;
+; arriav_lcell_comb     ; 709                         ;
 ;     arith             ; 170                         ;
 ;         1 data inputs ; 98                          ;
 ;         2 data inputs ; 24                          ;
 ;         4 data inputs ; 48                          ;
-;     extend            ; 5                           ;
-;         7 data inputs ; 5                           ;
-;     normal            ; 489                         ;
+;     extend            ; 9                           ;
+;         7 data inputs ; 9                           ;
+;     normal            ; 482                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 86                          ;
-;         4 data inputs ; 59                          ;
-;         5 data inputs ; 197                         ;
-;         6 data inputs ; 109                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 44                          ;
+;         3 data inputs ; 89                          ;
+;         4 data inputs ; 103                         ;
+;         5 data inputs ; 135                         ;
+;         6 data inputs ; 108                         ;
 ;     shared            ; 48                          ;
 ;         2 data inputs ; 48                          ;
 ; boundary_port         ; 21                          ;
@@ -1751,7 +1758,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 288                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
-; Average LUT depth     ; 3.09                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1770,7 +1777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 25 12:56:35 2022
+    Info: Processing started: Mon Apr 25 23:08:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1780,8 +1787,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file fifo.sv
     Info (12023): Found entity 1: fifo File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file.sv
     Info (12023): Found entity 1: reg_file File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/reg_file.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file part1.v
-    Info (12023): Found entity 1: part1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file counter.sv
     Info (12023): Found entity 1: counter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 3
     Info (12023): Found entity 2: counter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 18
@@ -1790,11 +1795,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file tonemem
 Info (12021): Found 2 design units, including 2 entities, in source file fir_filter.sv
     Info (12023): Found entity 1: FIR_Filter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 1
     Info (12023): Found entity 2: FIR_Filter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file part1.sv
+    Info (12023): Found entity 1: part1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at part1.sv(85): created implicit net for "reset" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 85
 Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter.sv(8): Parameter Declaration in module "FIR_Filter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 8
 Info (12127): Elaborating entity "part1" for the top level hierarchy
-Info (12128): Elaborating entity "counter" for hierarchy "counter:UPCOUNTER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 72
+Info (12128): Elaborating entity "counter" for hierarchy "counter:UPCOUNTER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 86
 Warning (10230): Verilog HDL assignment warning at counter.sv(11): truncated value with size 32 to match size of target (16) File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 11
-Info (12128): Elaborating entity "tonemem" for hierarchy "tonemem:TONEMEMORY" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 74
+Info (12128): Elaborating entity "tonemem" for hierarchy "tonemem:TONEMEMORY" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 88
 Info (12128): Elaborating entity "altsyncram" for hierarchy "tonemem:TONEMEMORY|altsyncram:altsyncram_component" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "tonemem:TONEMEMORY|altsyncram:altsyncram_component" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
 Info (12133): Instantiated megafunction "tonemem:TONEMEMORY|altsyncram:altsyncram_component" with the following parameter: File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
@@ -1826,13 +1834,13 @@ Info (12128): Elaborating entity "decode_41a" for hierarchy "tonemem:TONEMEMORY|
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9hb.tdf
     Info (12023): Found entity 1: mux_9hb File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/mux_9hb.tdf Line: 23
 Info (12128): Elaborating entity "mux_9hb" for hierarchy "tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_d0q1.tdf Line: 47
-Info (12128): Elaborating entity "FIR_Filter" for hierarchy "FIR_Filter:leftFilter" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 79
+Info (12128): Elaborating entity "FIR_Filter" for hierarchy "FIR_Filter:leftFilter" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 93
 Info (12128): Elaborating entity "fifo" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 14
 Info (12128): Elaborating entity "fifo_ctrl" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv Line: 25
 Info (12128): Elaborating entity "reg_file" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv Line: 26
 Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clock_generator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 48
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 107
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 121
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
 Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
 Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
@@ -1897,7 +1905,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
 Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_and_video_config File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 49
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 117
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 131
 Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/altera_up_slow_clock_generator.v Line: 53
 Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 180
@@ -1909,7 +1917,7 @@ Warning (12125): Using design file altera_up_i2c.v, which is not specified as a 
 Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 252
 Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_codec File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_codec.v Line: 49
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 138
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 152
 Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Clock_Edge File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/altera_up_clock_edge.v Line: 48
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_codec.v Line: 181
@@ -1969,11 +1977,11 @@ Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 24
-        Info (286033): Parameter WIDTHAD_A set to 3
-        Info (286033): Parameter NUMWORDS_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
         Info (286033): Parameter WIDTH_B set to 24
-        Info (286033): Parameter WIDTHAD_B set to 3
-        Info (286033): Parameter NUMWORDS_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
@@ -1984,11 +1992,11 @@ Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit|array_reg_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 24
-        Info (286033): Parameter WIDTHAD_A set to 3
-        Info (286033): Parameter NUMWORDS_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
         Info (286033): Parameter WIDTH_B set to 24
-        Info (286033): Parameter WIDTHAD_B set to 3
-        Info (286033): Parameter NUMWORDS_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
@@ -2000,11 +2008,11 @@ Info (12130): Elaborated megafunction instantiation "FIR_Filter:rightFilter|fifo
 Info (12133): Instantiated megafunction "FIR_Filter:rightFilter|fifo:BUFFER|reg_file:r_unit|altsyncram:array_reg_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
     Info (12134): Parameter "WIDTH_A" = "24"
-    Info (12134): Parameter "WIDTHAD_A" = "3"
-    Info (12134): Parameter "NUMWORDS_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "4"
+    Info (12134): Parameter "NUMWORDS_A" = "16"
     Info (12134): Parameter "WIDTH_B" = "24"
-    Info (12134): Parameter "WIDTHAD_B" = "3"
-    Info (12134): Parameter "NUMWORDS_B" = "8"
+    Info (12134): Parameter "WIDTHAD_B" = "4"
+    Info (12134): Parameter "NUMWORDS_B" = "16"
     Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
     Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
     Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
@@ -2012,32 +2020,32 @@ Info (12133): Instantiated megafunction "FIR_Filter:rightFilter|fifo:BUFFER|reg_
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_agi1.tdf
-    Info (12023): Found entity 1: altsyncram_agi1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_agi1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_aji1.tdf
+    Info (12023): Found entity 1: altsyncram_aji1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_aji1.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[1]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[2]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[3]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[4]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[5]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[6]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-    Warning (15610): No output dependent on input pin "SW[7]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.v Line: 8
-Info (21057): Implemented 1157 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[1]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[2]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[3]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[4]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[5]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[6]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[7]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+Info (21057): Implemented 1164 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 847 logic cells
+    Info (21061): Implemented 854 logic cells
     Info (21064): Implemented 288 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Mon Apr 25 12:56:53 2022
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Mon Apr 25 23:08:44 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:30
 
 
