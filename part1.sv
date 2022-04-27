@@ -1,5 +1,12 @@
 `timescale 1 ps / 1 ps
-
+/* Top-Level module for testing different audio outputs
+*	Ports:
+*		KEY: Input for control of the KEYs on the DE1_SoC (4-bit)
+*		SW: Input for switch control (10-bit)
+*		CLOCK_50: 50Mhz clock (1-bit)
+*		FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, AUD_DACLRCK, AUD_ADCLRCK, 
+*		AUD_BCLK, AUD_ADCDAT, AUD_DACDAT: Audio Codec ports
+ */
 module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
 		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
 
@@ -31,7 +38,8 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	PART 1
 	*********************************
 	*/
-	
+
+//	Wire assignments for connecting audio codec to our implementation
 //	assign writedata_left = readdata_left;
 //	assign writedata_right = readdata_right;
 //	assign read = write;
@@ -47,13 +55,18 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 //	
 //	wire [23:0] tone;
 //	
+//	Counter to count up to 48000
+//	Output of counter is the address input of our Memory module
 //	counter #(.WIDTH(16)) UPCOUNTER(.incr(write), .reset(reset), .clk(CLOCK_50), .out(counterOut));  
-//	
+//
+//	Memory module to contain the values from our tone file
 //	tonemem TONEMEMORY(.address(counterOut), .clock(CLOCK_50), .data(), .wren(1'b0), .q(tone));
 //	
-//	
+//	RTL mux to switch between using the generated tone and audio file
 //	assign writedata_left = SW[9] ? tone:readdata_left;
 //	assign writedata_right = SW[9] ? tone:readdata_right;
+
+//	Audio codec wire ports
 //	assign read = write;
 //	assign write = read_ready & write_ready;
 	
@@ -63,14 +76,18 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	*********************************
 	*/
 	
+//	Filter wires
 	wire[23:0] filteredLeft, filteredRight, leftData, rightData;
 	
+//	Counter Wire
 	wire [15:0] counterOut;
 	
+//	tone wire
 	wire [23:0] tone;
 	
 	wire SW9C1, SW9C2, SW8C1, SW8C2, KEY0C1, KEY0C2;
 	
+//	Switch assignment to control audio outputs	
 	always_ff @(posedge CLOCK_50) begin
 		SW9C1 <= SW[9];
 		SW9C2 <= SW9C1;
@@ -81,20 +98,31 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 		KEY0C1 <= ~KEY[0];
 		KEY0C2 <= KEY0C1;
 	end
-	
+
+//	reset key 	
 	assign reset = KEY0C2;
+
+//	Counter to count up to 48000
+//	Output of counter is the address input of our Memory module
 	counter #(.WIDTH(16)) UPCOUNTER(.incr(write), .reset(reset), .clk(CLOCK_50), .out(counterOut));  
-	
+
+//	Memory module to contain the values from our tone file	
 	tonemem TONEMEMORY(.address(counterOut), .clock(CLOCK_50), .data(), .wren(1'b0), .q(tone));
-	
+
+//	RTL mux to pick between tone or filtered/unfiltered audio file	
 	assign leftData = SW9C2 ? tone:readdata_left;
 	assign rightData = SW9C2 ? tone:readdata_right;
 	
+//	Sending audio output to filter
+//	Left and Right channels seperatley
 	FIR_Filter #(.SIZE(16)) leftFilter(.dataIn(leftData), .en(read_ready & write_ready), .reset(reset), .clk(CLOCK_50), .dataOut(filteredLeft));
 	FIR_Filter #(.SIZE(16)) rightFilter(.dataIn(rightData), .en(read_ready & write_ready), .reset(reset), .clk(CLOCK_50), .dataOut(filteredRight));
 	
+//	RTL mux to switch between using the generated tone and audio file
 	assign writedata_left = SW8C2 ? filteredLeft:leftData;
 	assign writedata_right = SW8C2 ? filteredRight:rightData;
+
+//	Audio codec wires
 	assign read = write;
 	assign write = read_ready & write_ready;
 /////////////////////////////////////////////////////////////////////////////////

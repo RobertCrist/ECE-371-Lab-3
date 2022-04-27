@@ -1,9 +1,17 @@
 `timescale 1 ps / 1 ps
-
+/* Counter module 
+*	Ports:
+*		WIDTH:	Parameter of how many bits the counter needs to be (WIDTH-bits)
+*		incr:	Increment signal to incremenet counter. Controlled by write of codec (1-bit) 
+*		reset:	Reset signal to reset counter (1-bit)
+*		clk:	Clock input (1-bit)
+*		out:	Output of the counter (WIDTH-bits)
+*/
 module counter #(parameter WIDTH = 4)(incr, reset, clk, out);
 	input logic incr, reset, clk;
 	output logic [WIDTH - 1: 0] out;
 
+	//Incrementer to count timer
 	always_ff @(posedge clk) begin
 		if(reset | out == 48000)
 			out <= 0;
