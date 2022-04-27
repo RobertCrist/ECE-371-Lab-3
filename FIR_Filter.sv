@@ -5,10 +5,12 @@ module FIR_Filter #(parameter SIZE)(dataIn, en, reset, clk, dataOut);
 	
 	output logic [23:0] dataOut;
 	
-	parameter n = $clog2(SIZE);
+	
 	
 	logic [23:0] divIn, fifoOut, negFifoOut, divInFifoSum, accumulator;
 	
+	parameter n = $clog2(SIZE);
+
 	assign divIn =  {{n{dataIn[24-1]}}, dataIn[24-1:n]};
 
 	fifo #(.DATA_WIDTH(24), .ADDR_WIDTH(n)) BUFFER(.clk, .reset, .rd(en), .wr(en), .empty(), .full(), .w_data(divIn), .r_data(fifoOut));
@@ -22,7 +24,7 @@ module FIR_Filter #(parameter SIZE)(dataIn, en, reset, clk, dataOut);
 		else if(en)
 			accumulator <= accumulator + divInFifoSum;
 		
-	assign dataOut = accumulator;
+	assign dataOut = accumulator + divInFifoSum;
 endmodule
 
 module FIR_Filter_testbench();
