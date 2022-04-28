@@ -87,7 +87,8 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	
 	wire SW9C1, SW9C2, SW8C1, SW8C2, KEY0C1, KEY0C2;
 	
-//	Switch assignment to control audio outputs	
+//	Switch assignment to control audio outputs
+//	Clocking the external inputs to avoid metastability	
 	always_ff @(posedge CLOCK_50) begin
 		SW9C1 <= SW[9];
 		SW9C2 <= SW9C1;
@@ -97,7 +98,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 		
 		KEY0C1 <= ~KEY[0];
 		KEY0C2 <= KEY0C1;
-	end
+	end //always_ff
 
 //	reset key 	
 	assign reset = KEY0C2;
@@ -125,6 +126,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 //	Audio codec wires
 	assign read = write;
 	assign write = read_ready & write_ready;
+	
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
 //

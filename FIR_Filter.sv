@@ -30,14 +30,16 @@ module FIR_Filter #(parameter SIZE)(dataIn, en, reset, clk, dataOut);
 	assign divInFifoSum = negFifoOut + divIn;
 	
 	//Accumulator, adds upon itself and adds itself to divisor addition output
-	always_ff @(posedge clk)
+	always_ff @(posedge clk) begin
 		if(reset)
 			accumulator <= 0;
 		else if(en)
 			accumulator <= accumulator + divInFifoSum;
+	end //always_ff
+	
 	//Output of filter	
 	assign dataOut = accumulator + divInFifoSum;
-endmodule
+endmodule //FIR_Filter
 
 module FIR_Filter_testbench();
 	logic reset, clk;
@@ -60,6 +62,8 @@ module FIR_Filter_testbench();
 		reset <= 1; @(posedge clk);
 		reset <= 0; @(posedge clk);
 		
+		//Feed the system values that are all muliples of 4 so that they are clean
+		//Check how the data flows through the system and check oppperations
 		for(i = 0; i < 10; i++)begin 
 			dataIn <= 4*i; @(posedge clk);
 			en <= 1; @(posedge clk);
@@ -70,4 +74,4 @@ module FIR_Filter_testbench();
 		
 		$stop;
 	end
-endmodule
+endmodule //FIR_Filter_testbench

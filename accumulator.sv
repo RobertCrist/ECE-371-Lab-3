@@ -1,12 +1,27 @@
+/*
+	*NOTE* This module is not used but was used to test the accumulator
+	
+	This module stores a 24 bit value and adds dataIn to the stored value anytime en is high on a posedge of clk
+	Ports:	
+		dataIn: 	The data you would like to add to the accumulator
+		en:		Enabling the value to be added
+		dataOut:	dataIn + the value stored in the accumulator
+		clk: 		The clock used for timing
+		reset:	A signal to reset the system
+*/
+
 module accumulator(dataIn, en, dataOut, clk, reset);
+	//Input wires
 	input logic en, clk, reset;
 	input logic [23:0] dataIn;
-
+	
+	//Output wire
 	output logic [23:0] dataOut;
 	
+	//The data that is stored
 	logic [23:0] accumulator;
 	
-	
+	//Flipflops to store the data
 	always_ff @(posedge clk)
 		if(reset)
 			accumulator <= 0;
@@ -14,7 +29,7 @@ module accumulator(dataIn, en, dataOut, clk, reset);
 			accumulator <= accumulator + dataIn;
 		
 	assign dataOut = accumulator + dataIn;
-endmodule
+endmodule //accumulator
 
 module accumulator_testbench();
 	logic clk, en, reset;
@@ -39,5 +54,6 @@ module accumulator_testbench();
 		en <= 0; 										@(posedge clk);
 		repeat(3)										@(posedge clk);
 		$stop;
-	end
-endmodule
+	end //initial
+	
+endmodule //accumulator_testbench

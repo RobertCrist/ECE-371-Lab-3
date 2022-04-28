@@ -12,14 +12,14 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => SW8C1.DATAIN
 SW[9] => SW9C1.DATAIN
-FPGA_I2C_SCLK << audio_and_video_config:cfg.port3
+FPGA_I2C_SCLK <= audio_and_video_config:cfg.port3
 FPGA_I2C_SDAT <> audio_and_video_config:cfg.port2
-AUD_XCK << clock_generator:my_clock_gen.port2
+AUD_XCK <= clock_generator:my_clock_gen.port2
 AUD_DACLRCK => AUD_DACLRCK.IN1
 AUD_ADCLRCK => AUD_ADCLRCK.IN1
 AUD_BCLK => AUD_BCLK.IN1
 AUD_ADCDAT => AUD_ADCDAT.IN1
-AUD_DACDAT << audio_codec:codec.port14
+AUD_DACDAT <= audio_codec:codec.port14
 
 
 |part1|counter:UPCOUNTER

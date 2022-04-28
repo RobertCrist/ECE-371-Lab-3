@@ -19,9 +19,9 @@ module counter #(parameter WIDTH = 4)(incr, reset, clk, out);
 			out <= out + 1;
 		else
 			out <= out;
-	end
+	end //always_ff
 		
-endmodule
+endmodule //counter
 
 module counter_testbench();
 	logic reset, clk;
@@ -52,4 +52,4 @@ module counter_testbench();
 		$stop;
 	end //initial
 	
-endmodule //upDownCounterReg_testbench
+endmodule //counter_testbench

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part1
-Wed Apr 27 16:04:34 2022
+Wed Apr 27 19:58:41 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -95,7 +95,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 27 16:04:34 2022       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 27 19:58:41 2022       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; part1                                       ;
 ; Top-level Entity Name           ; part1                                       ;
@@ -1767,7 +1767,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1777,7 +1777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 27 16:04:03 2022
+    Info: Processing started: Wed Apr 27 19:58:02 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1788,24 +1788,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file fifo.sv
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file.sv
     Info (12023): Found entity 1: reg_file File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/reg_file.sv Line: 5
 Info (12021): Found 2 design units, including 2 entities, in source file counter.sv
-    Info (12023): Found entity 1: counter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 3
-    Info (12023): Found entity 2: counter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 18
+    Info (12023): Found entity 1: counter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 10
+    Info (12023): Found entity 2: counter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file tonemem.v
     Info (12023): Found entity 1: tonemem File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 40
 Info (12021): Found 2 design units, including 2 entities, in source file fir_filter.sv
-    Info (12023): Found entity 1: FIR_Filter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 1
-    Info (12023): Found entity 2: FIR_Filter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 30
+    Info (12023): Found entity 1: FIR_Filter File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 9
+    Info (12023): Found entity 2: FIR_Filter_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file part1.sv
-    Info (12023): Found entity 1: part1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 3
+    Info (12023): Found entity 1: part1 File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 10
 Info (12021): Found 2 design units, including 2 entities, in source file accumulator.sv
-    Info (12023): Found entity 1: accumulator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/accumulator.sv Line: 1
-    Info (12023): Found entity 2: accumulator_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/accumulator.sv Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at part1.sv(85): created implicit net for "reset" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 85
-Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter.sv(12): Parameter Declaration in module "FIR_Filter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 12
+    Info (12023): Found entity 1: accumulator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/accumulator.sv Line: 13
+    Info (12023): Found entity 2: accumulator_testbench File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/accumulator.sv Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at part1.sv(104): created implicit net for "reset" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 104
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter.sv(19): Parameter Declaration in module "FIR_Filter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 19
 Info (12127): Elaborating entity "part1" for the top level hierarchy
-Info (12128): Elaborating entity "counter" for hierarchy "counter:UPCOUNTER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 86
-Warning (10230): Verilog HDL assignment warning at counter.sv(11): truncated value with size 32 to match size of target (16) File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 11
-Info (12128): Elaborating entity "tonemem" for hierarchy "tonemem:TONEMEMORY" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 88
+Info (12128): Elaborating entity "counter" for hierarchy "counter:UPCOUNTER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 108
+Warning (10230): Verilog HDL assignment warning at counter.sv(19): truncated value with size 32 to match size of target (16) File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/counter.sv Line: 19
+Info (12128): Elaborating entity "tonemem" for hierarchy "tonemem:TONEMEMORY" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 111
 Info (12128): Elaborating entity "altsyncram" for hierarchy "tonemem:TONEMEMORY|altsyncram:altsyncram_component" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "tonemem:TONEMEMORY|altsyncram:altsyncram_component" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
 Info (12133): Instantiated megafunction "tonemem:TONEMEMORY|altsyncram:altsyncram_component" with the following parameter: File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/tonemem.v Line: 86
@@ -1837,13 +1837,13 @@ Info (12128): Elaborating entity "decode_41a" for hierarchy "tonemem:TONEMEMORY|
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9hb.tdf
     Info (12023): Found entity 1: mux_9hb File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/mux_9hb.tdf Line: 23
 Info (12128): Elaborating entity "mux_9hb" for hierarchy "tonemem:TONEMEMORY|altsyncram:altsyncram_component|altsyncram_d0q1:auto_generated|mux_9hb:mux2" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/db/altsyncram_d0q1.tdf Line: 47
-Info (12128): Elaborating entity "FIR_Filter" for hierarchy "FIR_Filter:leftFilter" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 93
-Info (12128): Elaborating entity "fifo" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 16
+Info (12128): Elaborating entity "FIR_Filter" for hierarchy "FIR_Filter:leftFilter" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 119
+Info (12128): Elaborating entity "fifo" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/FIR_Filter.sv Line: 25
 Info (12128): Elaborating entity "fifo_ctrl" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER|fifo_ctrl:c_unit" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv Line: 25
 Info (12128): Elaborating entity "reg_file" for hierarchy "FIR_Filter:leftFilter|fifo:BUFFER|reg_file:r_unit" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/fifo.sv Line: 26
 Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clock_generator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 48
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 121
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 151
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
 Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
 Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/clock_generator.v Line: 134
@@ -1908,7 +1908,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
 Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_and_video_config File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 49
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 131
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 161
 Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/altera_up_slow_clock_generator.v Line: 53
 Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 180
@@ -1920,7 +1920,7 @@ Warning (12125): Using design file altera_up_i2c.v, which is not specified as a 
 Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_and_video_config.v Line: 252
 Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_codec File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_codec.v Line: 49
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 152
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 182
 Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Clock_Edge File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/altera_up_clock_edge.v Line: 48
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/audio_codec.v Line: 181
@@ -2030,14 +2030,14 @@ Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[1]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[2]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[3]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[4]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[5]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[6]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[7]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[0]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[1]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[2]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[3]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[4]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[5]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[6]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
+    Warning (15610): No output dependent on input pin "SW[7]" File: E:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3/part1.sv Line: 15
 Info (21057): Implemented 1192 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 3 output pins
@@ -2046,9 +2046,9 @@ Info (21057): Implemented 1192 device resources after synthesis - the final reso
     Info (21064): Implemented 288 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Wed Apr 27 16:04:34 2022
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Wed Apr 27 19:58:41 2022
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:39
 
 
