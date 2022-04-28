@@ -1,5 +1,5 @@
 Flow report for part1
-Mon Apr 25 23:08:44 2022
+Wed Apr 27 16:04:34 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Apr 25 23:08:44 2022       ;
+; Flow Status                     ; Successful - Wed Apr 27 16:04:34 2022       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; part1                                       ;
 ; Top-level Entity Name           ; part1                                       ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/25/2022 23:08:26 ;
+; Start date & time ; 04/27/2022 16:04:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; part1               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 238368717978445.165095330608852        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 238368717978445.165110064425556        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; tonemem_bb.v                           ; --            ; --          ; --         ;
@@ -96,8 +96,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4856 MB             ; 00:00:29                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4858 MB             ; 00:00:39                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

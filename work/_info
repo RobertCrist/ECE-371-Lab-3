@@ -8,35 +8,35 @@ z2
 !i10f 100
 cModel Technology
 Z0 dE:/College/Spring 2022/EE 371/Labs/ECE-371-Lab-3
-vcounter
+vaccumulator
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1650861137
+Z2 !s110 1651105291
 !i10b 1
-!s100 2U34MdTW6EbI2k5P=5S_P1
-I>8[0iC;C1K`AJB05lXOe32
+!s100 Z8cacQcmSQ_j@e@92JjR`3
+IGJ]mJebiT[Bkm6^[]W=az1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 counter_sv_unit
+Z4 !s105 accumulator_sv_unit
 S1
 R0
-Z5 w1650861091
-Z6 8./counter.sv
-Z7 F./counter.sv
-L0 3
+Z5 w1651105285
+Z6 8./accumulator.sv
+Z7 F./accumulator.sv
+L0 1
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1650861137.000000
-Z10 !s107 ./counter.sv|
-Z11 !s90 -reportprogress|300|./counter.sv|
+Z9 !s108 1651105291.000000
+Z10 !s107 ./accumulator.sv|
+Z11 !s90 -reportprogress|300|./accumulator.sv|
 !i113 1
 Z12 tCvgOpt 0
-vcounter_testbench
+vaccumulator_testbench
 R1
 R2
 !i10b 1
-!s100 ?N>@`>_ij<a;AgV?ff0lE3
-IIHRIW7:Pe^zXdBoUlOL000
+!s100 W_ZOP31jIZBO]S1RYlajV0
+ISW^z=@Jb`BI4B_NV3bPcl2
 R3
 R4
 S1
@@ -44,7 +44,7 @@ R0
 R5
 R6
 R7
-L0 27
+L0 19
 R8
 r1
 !s85 0
@@ -54,9 +54,55 @@ R10
 R11
 !i113 1
 R12
+vcounter
+R1
+Z13 !s110 1651103311
+!i10b 1
+!s100 G1`e43feIV`YB;1ZX>UNC2
+I0;1mkl];5?<65aCSjcaJ11
+R3
+Z14 !s105 counter_sv_unit
+S1
+R0
+Z15 w1651102676
+Z16 8./counter.sv
+Z17 F./counter.sv
+L0 3
+R8
+r1
+!s85 0
+31
+Z18 !s108 1651103311.000000
+Z19 !s107 ./counter.sv|
+Z20 !s90 -reportprogress|300|./counter.sv|
+!i113 1
+R12
+vcounter_testbench
+R1
+R13
+!i10b 1
+!s100 7d?d5S6nEILUG:6klYI@e2
+I;ljQPzd1TmJgU>JSTnF<03
+R3
+R14
+S1
+R0
+R15
+R16
+R17
+L0 18
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R12
 vfifo
 R1
-Z13 !s110 1650944083
+Z21 !s110 1651103367
 !i10b 1
 !s100 WN8B@WmkXW0LHK:UCBzlP1
 IVZk^m<>Sl<`PAWRg3BMfY3
@@ -72,14 +118,14 @@ R8
 r1
 !s85 0
 31
-Z14 !s108 1650944083.000000
+Z22 !s108 1651103367.000000
 !s107 ./fifo.sv|
 !s90 -reportprogress|300|./fifo.sv|
 !i113 1
 R12
 vfifo_ctrl
 R1
-R13
+R21
 !i10b 1
 !s100 1X13]CG;GkmEO]SDEMhlN0
 IP]8^06cFbS4:9n^CBId[g0
@@ -95,62 +141,62 @@ R8
 r1
 !s85 0
 31
-R14
+R22
 !s107 ./fifo_ctrl.sv|
 !s90 -reportprogress|300|./fifo_ctrl.sv|
 !i113 1
 R12
 vFIR_Filter
 R1
-R13
+R21
 !i10b 1
-!s100 Y:T5A[lQ3G6@59^^AFjFh0
-Ig`:KD:RRkAP6>X=FWcF7]2
+!s100 ODEIzBg?2W:WkQSN?`UVe1
+I9o3Z]HF?KnJ^b9U5Q9Wc32
 R3
-Z15 !s105 FIR_Filter_sv_unit
+Z23 !s105 FIR_Filter_sv_unit
 S1
 R0
-Z16 w1650913896
-Z17 8./FIR_Filter.sv
-Z18 F./FIR_Filter.sv
+Z24 w1651097630
+Z25 8./FIR_Filter.sv
+Z26 F./FIR_Filter.sv
 L0 1
 R8
 r1
 !s85 0
 31
-Z19 !s108 1650944082.000000
-Z20 !s107 ./FIR_Filter.sv|
-Z21 !s90 -reportprogress|300|./FIR_Filter.sv|
+Z27 !s108 1651103366.000000
+Z28 !s107 ./FIR_Filter.sv|
+Z29 !s90 -reportprogress|300|./FIR_Filter.sv|
 !i113 1
 R12
 n@f@i@r_@filter
 vFIR_Filter_testbench
 R1
-R13
+R21
 !i10b 1
-!s100 g8clFOU=[6:UHWR;OK6kk1
-IWbc?ZXhm7:]9G]aOIZ:cX2
+!s100 9NGN8FZVICg>jdAUZShW22
+IIEMIiTceV_oG?3iC[LZK50
 R3
-R15
+R23
 S1
 R0
-R16
-R17
-R18
-L0 28
+R24
+R25
+R26
+L0 30
 R8
 r1
 !s85 0
 31
-R19
-R20
-R21
+R27
+R28
+R29
 !i113 1
 R12
 n@f@i@r_@filter_testbench
 vreg_file
 R1
-R13
+R21
 !i10b 1
 !s100 [@1_RbQU3J3FQI9VSJo9I2
 Il_P^FzaSW;QI1zKY`P1Jg1
@@ -166,7 +212,7 @@ R8
 r1
 !s85 0
 31
-R14
+R22
 !s107 ./reg_file.sv|
 !s90 -reportprogress|300|./reg_file.sv|
 !i113 1

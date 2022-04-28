@@ -1,0 +1,23 @@
+module accumulator(dataIn, dataOut, clk, reset);
+	input logic clk, reset;
+	input logic [23:0] dataIn;
+
+	output logic [23:0] dataOut;
+	
+	logic [23:0] accumulator;
+	
+	
+	always_ff @(posedge clk)
+		if(reset)
+			accumulator <= 0;
+		else if(en)
+			accumulator <= accumulator + divInFifoSum;
+		
+	assign dataOut = accumulator + divInFifoSum;
+endmodule
+
+module accumulator_testbench();
+	logic clk, reset;
+	logic [23:0] dataIn;
+
+	logic [23:0] dataOut;

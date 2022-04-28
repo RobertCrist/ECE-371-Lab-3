@@ -12,14 +12,14 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => SW8C1.DATAIN
 SW[9] => SW9C1.DATAIN
-FPGA_I2C_SCLK <= audio_and_video_config:cfg.port3
+FPGA_I2C_SCLK << audio_and_video_config:cfg.port3
 FPGA_I2C_SDAT <> audio_and_video_config:cfg.port2
-AUD_XCK <= clock_generator:my_clock_gen.port2
+AUD_XCK << clock_generator:my_clock_gen.port2
 AUD_DACLRCK => AUD_DACLRCK.IN1
 AUD_ADCLRCK => AUD_ADCLRCK.IN1
 AUD_BCLK => AUD_BCLK.IN1
 AUD_ADCDAT => AUD_ADCDAT.IN1
-AUD_DACDAT <= audio_codec:codec.port14
+AUD_DACDAT << audio_codec:codec.port14
 
 
 |part1|counter:UPCOUNTER
@@ -3145,30 +3145,30 @@ clk => accumulator[20].CLK
 clk => accumulator[21].CLK
 clk => accumulator[22].CLK
 clk => accumulator[23].CLK
-dataOut[0] <= accumulator[0].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[1] <= accumulator[1].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[2] <= accumulator[2].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[3] <= accumulator[3].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[4] <= accumulator[4].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[5] <= accumulator[5].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[6] <= accumulator[6].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[7] <= accumulator[7].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[8] <= accumulator[8].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[9] <= accumulator[9].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[10] <= accumulator[10].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[11] <= accumulator[11].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[12] <= accumulator[12].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[13] <= accumulator[13].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[14] <= accumulator[14].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[15] <= accumulator[15].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[16] <= accumulator[16].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[17] <= accumulator[17].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[18] <= accumulator[18].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[19] <= accumulator[19].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[20] <= accumulator[20].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[21] <= accumulator[21].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[22] <= accumulator[22].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[23] <= accumulator[23].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[8] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[9] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[10] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[11] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[12] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[13] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[15] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[16] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[17] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[18] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[19] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[20] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[21] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[22] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[23] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |part1|FIR_Filter:leftFilter|fifo:BUFFER
@@ -3532,30 +3532,30 @@ clk => accumulator[20].CLK
 clk => accumulator[21].CLK
 clk => accumulator[22].CLK
 clk => accumulator[23].CLK
-dataOut[0] <= accumulator[0].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[1] <= accumulator[1].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[2] <= accumulator[2].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[3] <= accumulator[3].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[4] <= accumulator[4].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[5] <= accumulator[5].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[6] <= accumulator[6].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[7] <= accumulator[7].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[8] <= accumulator[8].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[9] <= accumulator[9].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[10] <= accumulator[10].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[11] <= accumulator[11].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[12] <= accumulator[12].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[13] <= accumulator[13].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[14] <= accumulator[14].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[15] <= accumulator[15].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[16] <= accumulator[16].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[17] <= accumulator[17].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[18] <= accumulator[18].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[19] <= accumulator[19].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[20] <= accumulator[20].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[21] <= accumulator[21].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[22] <= accumulator[22].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[23] <= accumulator[23].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[8] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[9] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[10] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[11] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[12] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[13] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[15] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[16] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[17] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[18] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[19] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[20] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[21] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[22] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[23] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |part1|FIR_Filter:rightFilter|fifo:BUFFER
